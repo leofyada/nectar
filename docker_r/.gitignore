@@ -1,0 +1,5 @@
+.Rhistory
+.Rproj.user
+.DS_Store
+docker_r.Rproj
+data/base_compras_materialservico.csv

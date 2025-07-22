@@ -6,6 +6,9 @@
 library(readr)
 library(dplyr)
 library(readxl)
+library(googleCloudStorageR)
+library(rstudioapi)
+library(usethis)
 
 # Set options
 options(stringsAsFactors = FALSE)
