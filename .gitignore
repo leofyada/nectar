@@ -171,3 +171,6 @@ rsconnect/
 
 # GCP credential
 credencial_gcp.json
+
+# Data
+docker_r/data
