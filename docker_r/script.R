@@ -3,12 +3,12 @@
 ##############################################
 
 # Load libraries
-library(readr)
-library(dplyr)
-library(readxl)
-library(googleCloudStorageR)
-library(rstudioapi)
-library(here)
+library(readr)                 # Biblioteca para leitura de arquivos
+library(dplyr)                 # Biblioteca para manipulação de dados
+library(readxl)                # Biblioteca para leitura de Excel
+library(googleCloudStorageR)   # Biblioteca para acessar google cloud storage
+library(rstudioapi)            # Biblioteca para utilização de APIs
+library(here)                  # Biblioteca para reprodução de scripts
 
 # Set options
 options(stringsAsFactors = FALSE)
