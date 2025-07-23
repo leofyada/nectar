@@ -8,14 +8,19 @@ library(dplyr)
 library(readxl)
 library(googleCloudStorageR)
 library(rstudioapi)
-library(usethis)
+library(here)
 
 # Set options
 options(stringsAsFactors = FALSE)
 
+# Get data from GCP
+gcs_setup()
+objects <- gcs_list_objects()
+gcs_get_object(objects$name[[2]], saveToDisk = here::here("docker_r", "data", "base_itens.xlsx"), overwrite = TRUE)
+
 # Set file paths
-base_compras_MG  <- "data/4_baseFinalItens2025mar 1.xlsx"
-output_path <- "data/base_compras_materialservico.csv"
+base_compras_MG  <- here::here("docker_r", "data", "base_itens.xlsx")
+output_path <- here::here("docker_r", "data", "base_compras_materialservico.csv")
 
 ######################################################
 #                IMPORTAÇÃO DE DADOS                 #
