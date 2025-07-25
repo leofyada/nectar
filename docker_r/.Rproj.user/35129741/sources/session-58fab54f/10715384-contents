@@ -1,8 +1,0 @@
-# Load required packages
-packages <- c("readr", "readxl", "dplyr")
-
-# Install missing packages
-installed <- rownames(installed.packages())
-for (pkg in packages) {
-  if (!(pkg %in% installed)) install.packages(pkg)
-}
